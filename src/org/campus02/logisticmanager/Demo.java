@@ -27,10 +27,6 @@ public class Demo {
 		//Ausgabe der Hash Map --> Auto Farbe + Anzahl
 		System.out.println(getCarsByColor(cars));
 		
-
-
-		
-
 	}
 
 	public static HashMap<String, Integer> getCarsByColor(ArrayList<Car> cars){
