@@ -29,6 +29,18 @@ public class Demo {
 		CsvDocument csvdocument2 = new CsvDocument("demo2.csv", new ArrayList<String>());
 		csvdocument2.addLine("line;column2;usw");
 		csvdocument2.printDocument();
+		
+		System.out.println();
+		//Print Manager
+		PrintManager printdoc = new PrintManager();
+		printdoc.addDocument(document);
+		printdoc.addDocument(textdocument);
+		printdoc.addDocument(imagedocument);
+		
+		printdoc.printDocument();
+		System.out.println();
+		
+		System.out.println(printdoc.findDocument("image.png"));
 
 	}
 
