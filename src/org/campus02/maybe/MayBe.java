@@ -28,7 +28,8 @@ public class MayBe<T> {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	
+	/*
+	//zu verwenden wenn ausgegeben werden soll
 	public void print(){
 		switch(status){
 		case ZugriffErlaubt: {
@@ -49,7 +50,17 @@ public class MayBe<T> {
 		}
 		
 		}
-	}
+		*/
+		
+	//Lösung @overide für String ausgabe
+	//String toString
+		public String toString(){
+			switch(status){
+			case 1: return "Zugriff gestattet: "+data;
+			case 2: return "Zugriff nicht gestattet";
+			case 3: return "Nicht erfasst ";
+			default: return "Ungültiger Status!";
+			}
+		}
 	
-
 }

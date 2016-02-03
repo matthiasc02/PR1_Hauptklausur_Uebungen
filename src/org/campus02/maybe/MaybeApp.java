@@ -23,7 +23,8 @@ public class MaybeApp {
 		//maybe Data
 
 		MayBe<String> Name = new MayBe<String> ("Test",MayBe.ZugriffErlaubt);
-		
+		/*
+		//Ausgabe mit print methode
 		Name.print();
 		Name.setStatus(MayBe.ZugriffVerboten);
 		Name.print();
@@ -40,7 +41,10 @@ public class MaybeApp {
 				new MayBe<GregorianCalendar>
 			(new GregorianCalendar(2015,10,10),MayBe.ZugriffErlaubt);
 		Geb.print();
+		*/
+		System.out.println(Name);
 
 	}
+	
 
 }
